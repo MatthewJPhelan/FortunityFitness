@@ -16,7 +16,7 @@
     ],
     "paths": {
       "@/*": [
-        "src/*"
+        "Project/*"
       ]
     },
     "lib": [
@@ -27,13 +27,16 @@
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
+    "Project/**/*.ts",
+    "Project/**/*.tsx",
+    "Project/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "Project/Components/**/*.stories.js",
+    "Project/Components/**/*.stories.ts",
+    "vue.config.js"
   ]
 }

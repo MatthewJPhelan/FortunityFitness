@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Ping from '../components/Ping.vue'
+import Ping from '../Components/Ping.vue'
 
 Vue.use(VueRouter)
 
