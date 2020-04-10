@@ -1,13 +1,13 @@
 <template>
     <div class="container">
-        <div class="landing-header">
+        <div class="picture-grid">
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'LandingHeader'
+    name: 'PictureGrid'
 }
 </script>
 
@@ -18,7 +18,7 @@ export default {
     padding: 1rem;
 }
 
-.landing-header {
+.picture-grid {
     border-radius: 10px;
     height: 100%;
     background-position: center;

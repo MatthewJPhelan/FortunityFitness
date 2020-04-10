@@ -10,21 +10,22 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "bootstrap": "^4.3.1",
-    "core-js": "^3.6.4",
-    "normalize.css": "^8.0.1",
-    "vue": "^2.6.11",
-    "vue-class-component": "^7.2.2",
-    "vue-property-decorator": "^8.3.0",
-    "vue-router": "^3.1.5",
     "@storybook/addon-a11y": "^5.3.14",
     "@storybook/addon-knobs": "^5.3.14",
     "@storybook/addon-options": "^5.3.14",
     "@storybook/addon-viewport": "^5.3.14",
     "@storybook/addons": "^5.3.14",
     "@storybook/theming": "^5.3.14",
-    "@storybook/vue": "^5.3.14"
+    "@storybook/vue": "^5.3.14",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "core-js": "^3.6.4",
+    "magic-grid": "^3.2.4",
+    "normalize.css": "^8.0.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.2",
+    "vue-property-decorator": "^8.3.0",
+    "vue-router": "^3.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
