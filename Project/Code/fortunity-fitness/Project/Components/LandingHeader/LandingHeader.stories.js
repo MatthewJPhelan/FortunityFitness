@@ -8,7 +8,7 @@ const landingHeaderTemplate = `
     </div>
 `;
 
-storiesOf('03 - Page Components/Landing Header', module)
+storiesOf('Page Components/Landing Header', module)
     .addDecorator(withKnobs)
     .add('Default', () => ({
         components: { LandingHeader },

@@ -19,7 +19,7 @@ export default {
 }
 
 .landing-header {
-    border-radius: 10px;
+    border-radius: 0.5rem;
     height: 100%;
     background-position: center;
     background-size: cover;
