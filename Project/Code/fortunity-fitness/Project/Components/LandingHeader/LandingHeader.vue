@@ -9,7 +9,7 @@
                 </div>
                 <div class="landing-header__tagline">
                     <div class="landing-header__tagline-content">
-                        <strong>The Professionals Guide to Staying Fit</strong>
+                        <strong>The Professional's Guide to Staying Fit</strong>
                     </div>
                 </div>
             </div>
@@ -52,8 +52,8 @@ export default {
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(
-                        rgba(97,107,125, 0.5), 
-                        rgba(97,107,125, 0.65)
+                        $color-navy-light-50-opacity,
+                        $color-navy-light-65-opacity
                     ), 
                     url(https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
     

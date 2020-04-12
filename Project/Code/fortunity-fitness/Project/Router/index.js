@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../Components/Home.vue';
+import Home from '../Pages/Home.vue';
 Vue.use(VueRouter);
 const routes = [
     {
