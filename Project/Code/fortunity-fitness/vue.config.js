@@ -18,8 +18,12 @@ module.exports = {
         loaderOptions: {
             sass: {
                 prependData: `
-                    @import "@/Project/Styles/index.scss";
-                    @import "@/Project/Styles/mixins.scss";
+                    @import '@/Styles/colours.scss';
+                    @import '@/Styles/variables.scss';
+                    @import '@/Styles/mixins.scss';
+                    @import '@/Styles/animations.scss';
+                    @import '@/Styles/main.scss';
+                    @import '@/Styles/icons.scss';
                 `
             }
         }
