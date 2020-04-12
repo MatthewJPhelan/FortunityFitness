@@ -1,10 +1,6 @@
 const path = require("path");
 
 module.exports = {
-  chainWebpack: config => {
-    config.module.rules.delete("svg");
-  },
-  configureWebpack: {
     module: {
         rules: [
             {
@@ -23,6 +19,7 @@ module.exports = {
                         options: {
                             prependData:  `
                                 @import "Project/Styles/index.scss";
+                                @import "Project/Styles/mixins.scss";
                                 @import "Project/Styles/main.scss";
                                 @import "Project/Styles/colours.scss";
                             `
@@ -43,9 +40,33 @@ module.exports = {
                     }
                 ]
             },
-              {
-                test: /\.svg$/,
-                loader: 'vue-svg-loader', // `vue-svg` for webpack 1.x
+            {
+                test: /\.(svg)(\?.*)?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                        name: 'img/[name].[hash:8].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(gif)(\?.*)?$/,
+                use: [
+                  {
+                    loader: 'url-loader',
+                    options: {
+                      limit: 4096,
+                      fallback: {
+                        loader: 'file-loader',
+                        options: {
+                          name: 'img/[name].[hash:8].[ext]'
+                        }
+                      }
+                    }
+                  }
+                ]
               },
               {
                 test: /\.ts$/,
@@ -67,5 +88,4 @@ module.exports = {
               }
         ],
     },
-  }
 };

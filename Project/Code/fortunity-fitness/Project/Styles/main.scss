@@ -7,7 +7,21 @@ html {
   }
   
   .module {
-    &--bordered {
+    &-bordered {
       padding: 1rem;
+    }
+
+    &-contained {
+      max-width: 96rem;
+      margin: auto;
+      padding: 1rem 2rem;
+
+      @include medium-screen() {
+        padding: 1rem 1rem;
+      }
+
+      @include two-col-screen() {
+        padding: 1rem 4rem;
+      }
     }
   }
