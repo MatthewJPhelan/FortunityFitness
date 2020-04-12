@@ -1,0 +1,39 @@
+@keyframes backgroundMove {
+    0% {background-position: left}
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.6;
+    }
+    15% {
+        opacity: 0.85;
+    }
+    50% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 0.6;
+    }
+  }

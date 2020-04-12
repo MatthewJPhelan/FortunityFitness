@@ -1,12 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Ping from '../Components/Ping.vue';
+import Home from '../Pages/Home.vue';
 Vue.use(VueRouter);
 const routes = [
     {
-        path: '/ping',
-        name: 'Ping',
-        component: Ping,
+        path: '/',
+        name: 'Home',
+        component: Home,
     }
 ];
 const router = new VueRouter({
