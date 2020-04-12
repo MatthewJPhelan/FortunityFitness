@@ -1,6 +1,9 @@
 const path = require("path");
 
 module.exports = {
+    runtimeCompiler: true,
+    productionSourceMap: false,
+    lintOnSave: true,
     chainWebpack: config => {
         config
             .entry("app")
@@ -16,6 +19,7 @@ module.exports = {
             sass: {
                 prependData: `
                     @import "@/Project/Styles/index.scss";
+                    @import "@/Project/Styles/mixins.scss";
                 `
             }
         }
