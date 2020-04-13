@@ -46,8 +46,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    border-radius: 0.5rem;
+    height: 94vh;
+    border-radius: 0.5rem 0.5rem 0 0;
     animation: backgroundMove 2s ease;
     background-position: center;
     background-size: cover;
