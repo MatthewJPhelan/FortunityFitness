@@ -22,17 +22,17 @@ export default {
     .scroll-icon {
         display: flex;
         justify-content: center;
-        height: 1.75rem;
-        width: 1rem;
-        border: 1.5px solid white;
+        height: 2.5rem;
+        width: 1.5rem;
+        border: 2px solid white;
         border-radius: 12px;
 
         &__animation {
             position: relative;
-            width: 2px;
-            height: 2px;
-            border: 1px solid white;
-            border-radius: 2px;
+            width: 4px;
+            height: 4px;
+            border: 2px solid white;
+            border-radius: 4px;
             animation: 1.5s fingerTrack infinite
         }
     }

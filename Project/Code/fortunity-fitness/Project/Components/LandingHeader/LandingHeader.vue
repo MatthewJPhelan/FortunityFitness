@@ -62,10 +62,13 @@ export default {
         border-radius: 0.5rem;
         height: 50vh;
         padding: 3.5vh;
+        letter-spacing: 6px;
+        text-align: center;
         max-width: 24rem;
 
         @include medium-screen() {
             padding: 3vh;
+            max-width: 30rem;
         }
     }
 
