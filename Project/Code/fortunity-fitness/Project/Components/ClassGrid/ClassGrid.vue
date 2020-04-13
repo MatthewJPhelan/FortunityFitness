@@ -74,7 +74,7 @@ export default {
         text-decoration: none;
         background-position: center;
         background-size: cover;
-        transition: 1s;
+        transition: 0.5s;
 
         @include medium-screen() {
             height: 35rem;
@@ -88,7 +88,8 @@ export default {
             background-size: auto;
 
             #{$box}-text {
-                display: block;
+                opacity: 1;
+                color: white;
             }
 
             #{$box}-overlay {
@@ -108,8 +109,8 @@ export default {
 
         &-text{
             transition: 1s;
-            color: white;
-            display: none;
+            opacity: 0.5;
+            color: $color-navy-dark;
 
             &--title {
                 font-style: italic;
